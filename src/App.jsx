@@ -24,7 +24,7 @@ const App = () => {
         return;
       }
       setError('');
-      const response = await axios.post('https://rest-api-development.onrender.com/bfhl', { data: parsedData.data });
+      const response = await axios.post('https://bajaj-backend-9mcr.onrender.com/bfhl', { data: parsedData.data });
       setResponseData(response.data);
     } catch (err) {
       setError('Invalid JSON format.');
